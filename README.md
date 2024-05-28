@@ -4,6 +4,17 @@
 
 Official code of Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications
 
+## Abstract
+Model inversion, which aims to reconstruct the original training data from pre-trained discriminative models, is especially useful when the original training data is unavailable due to privacy, usage rights, or size constraints. However, existing dense inversion methods attempt to reconstruct the entire image area, making them extremely inefficient when inverting high-resolution images from large-scale Vision Transformers (ViTs). We further identify two underlying causes of this inefficiency: the redundant inversion of noisy backgrounds and the unintended inversion of spurious correlations—a phenomenon we term ``hallucination'' in model inversion. To address these limitations, {we propose a novel sparse model inversion strategy, as a plug-and-play extension to speed up existing dense inversion methods with no need for modifying their original loss functions.} Specifically, we selectively invert semantic foregrounds while stopping the inversion of noisy backgrounds and potential spurious correlations. Through both theoretical and empirical studies, we validate the efficacy of our approach in achieving significant inversion acceleration (up to 
+X 3.79) while maintaining comparable or even enhanced downstream performance in data-free model quantization and data-free knowledge transfer.
+
+![](fig/pipeline.png )
+Overall process of sparse model inversion. As the inversion progresses, our approach selectively inverts semantic foreground
+patches while progressively stopping the inversion of uninformative background patches (marked as black blocks). Those stopped patches
+are directly discarded, with no further feed-forward processing and backward gradient computation, and thus are excluded from inversion
+ever since. The final inverted image only retains sparse patches with semantically meaningful information.
+
+
 ## Requirements
   
 ```bash
@@ -81,3 +92,25 @@ python test_kt.py --model deit_tiny_16_cifar10 --prune_it -1 --prune_ratio 0 --d
 ```
 
 ## Acknowledge
+```bash
+@inproceedings{li2022psaqvit,
+  title={Patch Similarity Aware Data-Free Quantization for Vision Transformers},
+  author={Li, Zhikai and Ma, Liping and Chen, Mengjuan and Xiao, Junrui and Gu, Qingyi},
+  booktitle={European Conference on Computer Vision},
+  pages={154--170},
+  year={2022}
+}
+@inproceedings{yin2020dreaming,
+  title={Dreaming to distill: Data-free knowledge transfer via deepinversion},
+  author={Yin, Hongxu and Molchanov, Pavlo and Alvarez, Jose M and Li, Zhizhong and Mallya, Arun and Hoiem, Derek and Jha, Niraj K and Kautz, Jan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8715--8724},
+  year={2020}
+}
+@article{fang2021contrastive,
+  title={Contrastive Model Inversion for Data-Free Knowledge Distillation},
+  author={Fang, Gongfan and Song, Jie and Wang, Xinchao and Shen, Chengchao and Wang, Xingen and Song, Mingli},
+  journal={arXiv preprint arXiv:2105.08584},
+  year={2021}
+}
+```
