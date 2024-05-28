@@ -1,8 +1,8 @@
 
 
-# [ICML 2024] Sparse Model Inversion: Efficient Inversion of Vision Transformers with Less Hallucination
+# [ICML 2024] Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications
 
-Official code of Sparse Model Inversion: Efficient Inversion of Vision Transformers with Less Hallucination
+Official code of Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications
 
 ## Requirements
   
