@@ -79,3 +79,5 @@ python test_kt.py --model deit_tiny_16_cifar10 --prune_it 50 100 200 300 --prune
 ```bash
 python test_kt.py --model deit_tiny_16_cifar10 --prune_it -1 --prune_ratio 0 --dataset <YOUR_DATA_DIR> --model_path <YOUR_TEACHER_DIR> --datapool <YOUR_DATAPOOL_DIR>
 ```
+
+## Acknowledge
