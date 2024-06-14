@@ -90,6 +90,17 @@ python test_kt.py --model deit_tiny_16_cifar10 --prune_it 50 100 200 300 --prune
 ```bash
 python test_kt.py --model deit_tiny_16_cifar10 --prune_it -1 --prune_ratio 0 --dataset <YOUR_DATA_DIR> --model_path <YOUR_TEACHER_DIR> --datapool <YOUR_DATAPOOL_DIR>
 ```
+## BibTex
+```bash
+@inproceedings{
+hu2024sparse,
+title={Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications},
+author={Zixuan Hu and Yongxian Wei and Li Shen and Zhenyi Wang and Lei Li and Chun Yuan and Dacheng Tao},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=T0lFfO8HaK}
+}
+```
 
 ## Acknowledge
 ```bash
