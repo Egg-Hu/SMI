@@ -1,10 +1,23 @@
 
+<p align="center">
+  <img src="fig/smi_logo.png" width="350">
+</p>
+<!-- 链接 -->
+<p align="center">
+  <a href="https://openreview.net/pdf?id=T0lFfO8HaK">📝 Paper</a> &nbsp;|&nbsp;
+  <a href="https://icml.cc/media/icml-2024/Slides/33981_Z9O0rB0.pdf">📑 Slide</a> &nbsp;|&nbsp;
+  <a href="https://icml.cc/media/PosterPDFs/ICML%202024/33981.png?t=1718822154.2565045">📌 Poster</a>
+</p>
 
-# [ICML 2024] Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications
+<!-- 标题 -->
+<h2 align="center">[ICML 2024] Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications</h2>
+
+
+<!-- # [ICML 2024] Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications
 
 Official code of Sparse Model Inversion: Efficient Inversion of Vision Transformers for Data-Free Applications
 
-Refer to our [paper](https://openreview.net/pdf?id=T0lFfO8HaK), [poseter](https://icml.cc/media/PosterPDFs/ICML%202024/33981.png?t=1718822154.2565045) and [slide](https://icml.cc/media/icml-2024/Slides/33981_Z9O0rB0.pdf).
+Refer to our [paper](https://openreview.net/pdf?id=T0lFfO8HaK), [poseter](https://icml.cc/media/PosterPDFs/ICML%202024/33981.png?t=1718822154.2565045) and [slide](https://icml.cc/media/icml-2024/Slides/33981_Z9O0rB0.pdf). -->
 
 **[2025/2/1] Update**: We upload the Pre-trained models + Code for pre-training (refer to [checkpoint+code](https://drive.google.com/drive/folders/19fbRtQEdf_o1oTHrZYWuNq0vN35sC_49?usp=sharing)).
 
